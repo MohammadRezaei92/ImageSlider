@@ -213,7 +213,7 @@ public abstract class BaseSliderView {
         } else if (mFile != null) {
             rq = p.load(mFile);
         } else if (mRes != 0) {
-            p.load(mRes);
+            rq = p.load(mRes);
         } else {
             return;
         }
