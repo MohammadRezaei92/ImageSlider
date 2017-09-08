@@ -229,10 +229,10 @@ public abstract class BaseSliderView {
         v.findViewById(com.daimajia.slider.library.R.id.loading_bar).setVisibility(View.INVISIBLE);
         switch (mScaleType){
             case CenterCrop:
-                rq.placeholder(R.drawable.placeholder).dontAnimate().centerCrop().into(targetImageView);
+                rq.dontAnimate().centerCrop().into(targetImageView);
                 break;
             default:
-                rq.placeholder(R.drawable.placeholder).dontAnimate().into(targetImageView);
+                rq.dontAnimate().into(targetImageView);
                 break;
         }
 
